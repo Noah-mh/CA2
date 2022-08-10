@@ -12,7 +12,7 @@ let clock = () => {
   let period = "a.m.";
   if (hrs == 0) {
     hrs = 12;
-  } else if (hrs >= 12) {
+  } else if (hrs <= 12) {
     //some issues resolved
   }
   if (hrs > 12) {
