@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* Encoding Charset*/
+/*  Title: Introduction about me
+      Author: Lwin Moe Htet
+      Date: 08/08/2022
+       */
+/* .......
+   Digital Clock Style
+   ....... */
+
+.clock {
+	z-index: 100;
+	color: white;
+	display: grid;
+	place-items: center;
+	font-size: 19px;
+	text-shadow: 0.15em 0.075em hsla(0, 0%, 0%, 0.75);
+}

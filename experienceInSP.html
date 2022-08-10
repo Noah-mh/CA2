@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Title: Current Experience
+      Author: Lwin Moe Htet
+      Date: 08/08/2022
+      Filename: experienceInSP.html
+    -->
+    <!-- Image Credits to the rightfull owners and sources on the Internet -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Experiencec In SP</title>
+    <link rel="shortcut icon" href="Graphics/logo1.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- source for icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="CSS/mainLayout.css" />
+    <link rel="stylesheet" href="CSS/clock.css" />
+    <link rel="stylesheet" href="CSS/experience.css" />
+  </head>
+  <!--onload attribute runs a JavaScript Function called "OnLoad()"-->
+  <body onload="OnLoad()">
+    <!--Header-->
+    <!--sticky Top makes header stick at the top of the screen no matter how far down user has scrolled down-->
+    <header class="sticky-top">
+      <!--? Nav-->
+      <!--navbar makes nav a horizontal flex-->
+      <!--nav-expand-lg makes nav show content when it is at large screen-->
+      <!--navbar-dark makes elements in the navbar white-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-md-5 adds padding to the left and right by 3 rem when screen is medium size-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light py-2 px-md-4">
+        <div class="container-fluid">
+          <!--navbar-brand for project name-->
+          <!--Hyperlink to index.html-->
+          <a class="navbar-brand sitetitle" href="index.html">
+            <!--rounded-circle makes image have border-radius: 50%-->
+            <!--img-fluid makes image responsive-->
+            <img
+              src="Graphics/logo1.png"
+              class="rounded-circle img-fluid logo"
+              alt="logo"
+            />
+            My Career Prospect</a
+          >
+          <!-- Digital clock -->
+          <div id="clock" class="clock"></div>
+          <!--Toggle Navbar mobile menu button-->
+          <!--navbar-togglers bootstrap collapsing plugin-->
+          <!--data-toggle sets the state of the navbar whether it is toggled or collapsed-->
+          <!--data target will modify which element with the data from data-toggle-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!--Navbar 3 Menu Lines-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--collapse hides the navbar away-->
+          <!--navbar-collapse makes navbar open from top down instead of left & right-->
+          <!--justify-content-end shifts navbar to the right side of the screen-->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <!--navbar-nav a flex display which change from flex-direction row to flex-direction column 
+              depending on the screen size-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--nav-item items of the navbar-->
+              <!--active current html page-->
+              <!--rounded-pill gives the pill shaped buttons-->
+              <li class="nav-item rounded-pill">
+                <!--nav-link hyperlink to the next pages-->
+                <!--text-center center words-->
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item active rounded-pill">
+                <a class="nav-link text-center" href="experienceInSP.html"
+                  >Current Experience</a
+                >
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="careerOption.html"
+                  >Career Options</a
+                >
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="dit.html">D_I_T</a>
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="feedback.html"
+                  >Feedback</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  Image Carousel -->
+    <div id="Top">
+      <div id="ImgCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#ImgCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#ImgCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#ImgCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#ImgCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Graphics/experience/exp1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Graphics/experience/exp2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Graphics/experience/exp3.JPG"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Graphics/experience/archery.PNG"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#ImgCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#ImgCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Main Content-->
+    <div class="container mb-5">
+      <div class="col-12">
+        <p class="h2 text-center text-white p-3 my-4">Current Experiences</p>
+        <!-- text-truncate truncate the paragraph -->
+        <p class="text-truncate" id="readMore0">
+          Adjusting at first seemed to be a mission. Everything was new for an
+          international student like myself to adjust to living in the new city.
+          However, the moment I participated in SP online camp orientation, I
+          was certain that this was going to be my second home for the next
+          three years. During the orientation, we were able to partake in a
+          variety of games as an ice-breaker between the students and teachers.
+          We were also introduced to the wide range of workshops, and projects
+          that were in place at SP. The karate workshop, in particular, stood
+          out to me. Taking an interest in the club, I participated in the
+          training provided by my senior senseis and gained plenty of new
+          experiences and pleasant memories. I also joined the Archery Club for
+          my CCA. I have to take an interview to get into the competitive team
+          and I was able to get in. I am really satisfied with the result of me
+          getting into Archery Club.
+        </p>
+        <!-- showMore function to show the text -->
+        <input
+          type="button"
+          class="btn btn-primary rounded-pill mx-auto d-block"
+          value="Read More"
+          id="readMoreButton0"
+          onclick="showMore('readMore0','readMoreButton0')"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <p class="text-center h1 m-3">Courses Offereed in SOC</p>
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-md-8 d-flex flex-column order-2 order-md-1">
+          <p class="h3">Diploma in Information Technology</p>
+          <p class="text-justify">
+            Choosing to study the Diploma in Information Technology was a
+            perfect fit for me as a person fascinated by all the modern
+            technologies that the world has come to. By joining this program, I
+            have gathered not only a great deal of bookish knowledge but also
+            handfuls of real-life experience on different sectors concerning
+            Information Technology. This course provides me with knowledge on a
+            variety of sectors such as Enterprise Systems Development, Software
+            Applications, and Data Engineering. Different electives from this
+            Diploma include Software Development, Immersive Simulation
+            Technology, and User Experience (UX) Design.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-md-2 order-1" id="course">
+          <div class="row row-cols-2">
+            <div class="col">
+              <a
+                href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology"
+                target="_blank"
+              >
+                <img
+                  src="Graphics/experience/DIT.jpg"
+                  alt="DIT"
+                  class="w-100 img-fluid pb-1"
+                />
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology"
+                target="_blank"
+              >
+                <img
+                  src="Graphics/experience/FOP.jpg"
+                  alt="FOP"
+                  class="w-100 img-fluid pb-1"
+                />
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology"
+                target="_blank"
+              >
+                <img
+                  src="Graphics/experience/FED.jpg"
+                  alt="FED"
+                  class="w-100 img-fluid pt-1"
+                />
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology"
+                target="_blank"
+              >
+                <img
+                  src="Graphics/experience/FOC.jpg"
+                  alt="FOC"
+                  class="w-100 img-fluid pt-1"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-md-5 my-3">
+      <p class="text-center h1 m-3">Other Courses Offered in SOC</p>
+      <div class="row justify-content-around align-items-start" id="course">
+        <div class="col-12 col-md-4">
+          <div class="text-decoration-none">
+            <a
+              href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme"
+              target="_blank"
+            >
+              <img
+                src="Graphics/experience/ICT.jpg"
+                alt="Common ICT Programme"
+                class="w-100 img-fluid p-4"
+              />
+            </a>
+            <p class="text-center h4">DCIT</p>
+            <p class="text-center text-truncate" id="readMore1">
+              The Common ICT Programme focuses on teaching students the
+              fundamentals of different sectors of ICT such as computing, and
+              programming. This course also offers classes on Critical and
+              Analytical Thinking, Communicating for Project Effectiveness, and
+              Education and Career Guidance.
+            </p>
+            <input
+              type="button"
+              class="btn btn-primary rounded-pill mx-auto d-block"
+              value="Read More"
+              id="readMoreButton1"
+              onclick="showMore('readMore1','readMoreButton1')"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="text-decoration-none">
+            <a
+              href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics"
+              target="_blank"
+            >
+              <img
+                src="Graphics/experience/DAAA.jpg"
+                alt="anime"
+                class="w-100 img-fluid p-4"
+              />
+            </a>
+            <p class="text-center h4">DAAA</p>
+            <p class="text-center text-truncate" id="readMore2">
+              This programme is perfect for students who want to immerse
+              themselves in the world of robotics and artificial intelligence
+              studies. This course offers different modules such as studies on
+              Web Development, AI & Machine Learning, Data Engineering, Data
+              Visualisation, and so on.
+            </p>
+            <input
+              type="button"
+              class="btn btn-primary rounded-pill mx-auto d-block"
+              value="Read More"
+              id="readMoreButton2"
+              onclick="showMore('readMore2','readMoreButton2')"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="text-decoration-none">
+            <a
+              href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management"
+              target="_blank"
+            >
+              <img
+                src="Graphics/experience/DISM.jpg"
+                alt="photography"
+                class="w-100 img-fluid p-4"
+              />
+            </a>
+            <p class="text-center h4">DISM</p>
+            <p class="text-center text-truncate" id="readMore3">
+              This Diploma is the best fit for students with an interest in
+              keeping the internet a safe place for all users. In this course,
+              students will have different modules, namely, Digital Forensics
+              and Investigation, Secure Coding, Ethical Hacking and Defences,
+              Security Policy and Incident Management, and so on.
+            </p>
+            <input
+              type="button"
+              class="btn btn-primary rounded-pill mx-auto d-block"
+              value="Read More"
+              id="readMoreButton3"
+              onclick="showMore('readMore3','readMoreButton3')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom m-3 m-lg-5">
+      <a href="#Top" class="bg-primary rounded-circle p-2 d-block" id="Return">
+        <!--UpArrow SVG for Return to Top Button-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-capslock"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p class="h5 pt-2 m-0 text-white text-center">Contact me</p>
+      <div class="contactme">
+        <div class="icons">
+          <!--Instagram-->
+          <a
+            href="https://www.instagram.com/noah_mh_/"
+            class="icon icon--instagram"
+            target="_blank"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+          <!--  Facebook -->
+          <a
+            href="https://www.facebook.com/lwinmoe.htet.585"
+            class="icon icon--facebook"
+            target="_blank"
+          >
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <!--  Email  -->
+          <a
+            href="mailto:LMOEHTET.22@ichat.sp.edu.sg"
+            class="icon icon--mail"
+            target="_blank"
+          >
+            <i class="ri-mail-line"></i>
+          </a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Noah-mh/CA1"
+            class="icon icon--github"
+            target="_blank"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+        </div>
+      </div>
+      <!--Copyright Text-->
+      <!--h5 makes text a heading 5 using Bootstrap-->
+      <!--pb-2 adds 0.5rem of padding to the bottom of the element-->
+      <!--text-white make text white-->
+      <!--text-center centers text-->
+      <p class="h5 pt-2 m-0 text-white text-center">&copy;2022 Lwin Moe Htet</p>
+    </footer>
+
+    <!--Linking JavaScript Files-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JavaScript/clock.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/showMore.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* Encoding Charset*/
+/*  Title: Introduction about me
+    Author: Lwin Moe Htet
+    Date: 08/08/2022
+       */
+/* ................
+    Root Variables
+   ................ */
+
+:root {
+    --main-bg-color: conic-gradient(from -45deg at 400px 300px, hsla(170deg, 100%, 70%, .7),
+            transparent 50%, transparent), linear-gradient(-45deg, #060d5e, #002268);
+}
+
+/*  ..............
+      Body Styles
+    .............. */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+/* ==========
+      Nav Menu
+     ========== */
+.logo {
+    max-width: 60px;
+}
+
+.logo a:focus {
+    outline: none;
+}
+
+a.sitetitle {
+    font-size: 20px;
+    text-align: center;
+    line-height: 0;
+    font-family: Edo;
+    text-shadow: 0.15em 0.075em hsla(0, 0%, 0%, 0.75);
+}
+
+nav {
+    background: var(--main-bg-color);
+
+}
+
+header {
+    z-index: 1000;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+li.active,
+.nav-item:not(.active):hover {
+    border: 2px solid #fff !important;
+}
+
+.nav-item:not(.active) {
+    border: 2px solid #000 !important;
+}
+
+.nav-item:not(.active):hover a {
+    color: #000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+a.rounded-pill {
+    gap: 10px;
+}
+
+
+
+#course>div:hover {
+    transform-origin: 50% 50%;
+    transform-style: flat;
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+}
+
+#course>div {
+    transform: scale(1);
+    transition: transform 0.2s linear;
+}
+
+/*  ...............
+      Footer Styles
+     ............... */
+
+footer {
+    background: var(--main-bg-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+    color: #fff !important;
+    font-size: 30px;
+    background-position: center;
+}
+
+footer p {
+    max-height: 100px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+footer a {
+    width: 30px;
+    fill: white;
+}
+
+.contactme {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+#Return {
+    border: 2px black solid;
+    height: 45px;
+    width: 45px;
+    transition: opacity 0.3s ease;
+}
+
+.bg-primary {
+    background-color: #fff !important;
+}
+
+div.fixed-bottom {
+    right: 0 !important;
+    left: auto;
+}
+
+.icons {
+    display: flex;
+    column-gap: 25px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    ;
+    font-size: 30px;
+    color: #000;
+    border-radius: 30%;
+    outline: 2px solid #000;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+    color: #fff !important;
+}
+
+.icon--instagram:hover {
+    background-image:
+        radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285aeb 90%);
+    outline-color: #a82d76;
+}
+
+.icon--facebook:hover,
+.icon--mail:hover {
+    background: linear-gradient(120DEG, #1C3977, #3A5795, #2B4886, #4966A4);
+    outline-color: #1C3977;
+}
+
+.icon--github:hover {
+    background-color: #000;
+    outline-color: #000;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+
+}

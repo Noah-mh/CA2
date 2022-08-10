@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Title: DIT
+      Author: Lwin Moe Htet
+      Date: 08/08/2022
+      Filename: dit.html
+    -->
+    <!-- Image Credits to the rightfull owners and sources on the Internet -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIT</title>
+    <link rel="shortcut icon" href="Graphics/logo1.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- source for icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="CSS/mainLayout.css" />
+    <link rel="stylesheet" href="CSS/clock.css" />
+    <link rel="stylesheet" href="CSS/dit.css" />
+  </head>
+  <!--onload attribute runs a JavaScript Function called "OnLoad()"-->
+  <body onload="OnLoad()">
+    <!--Header-->
+    <!--sticky Top makes header stick at the top of the screen no matter how far down user has scrolled down-->
+    <header class="sticky-top">
+      <!--? Nav-->
+      <!--navbar makes nav a horizontal flex-->
+      <!--nav-expand-lg makes nav show content when it is at large screen-->
+      <!--navbar-dark makes elements in the navbar white-->
+      <!--py-2 adds padding to the top and bottom by 0.5rem-->
+      <!--px-md-5 adds padding to the left and right by 3 rem when screen is medium size-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light py-2 px-md-4">
+        <div class="container-fluid">
+          <!--navbar-brand for project name-->
+          <!--Hyperlink to index.html-->
+          <a class="navbar-brand sitetitle" href="index.html">
+            <!--rounded-circle makes image have border-radius: 50%-->
+            <!--img-fluid makes image responsive-->
+            <img
+              src="Graphics/logo1.png"
+              class="rounded-circle img-fluid logo"
+              alt="logo"
+            />
+            My Career Prospect</a
+          >
+          <!-- Digital clock -->
+          <div id="clock" class="clock"></div>
+          <!--Toggle Navbar mobile menu button-->
+          <!--navbar-togglers bootstrap collapsing plugin-->
+          <!--data-toggle sets the state of the navbar whether it is toggled or collapsed-->
+          <!--data target will modify which element with the data from data-toggle-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!--Navbar 3 Menu Lines-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--collapse hides the navbar away-->
+          <!--navbar-collapse makes navbar open from top down instead of left & right-->
+          <!--justify-content-end shifts navbar to the right side of the screen-->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <!--navbar-nav a flex display which change from flex-direction row to flex-direction column 
+              depending on the screen size-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--nav-item items of the navbar-->
+              <!--active current html page-->
+              <!--rounded-pill gives the pill shaped buttons-->
+              <li class="nav-item rounded-pill">
+                <!--nav-link hyperlink to the next pages-->
+                <!--text-center center words-->
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="experienceInSP.html"
+                  >Current Experience</a
+                >
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="careerOption.html"
+                  >Career Options</a
+                >
+              </li>
+              <li class="nav-item active rounded-pill">
+                <a class="nav-link text-center" href="dit.html">D_I_T</a>
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link text-center" href="feedback.html"
+                  >Feedback</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <p class="h2 text-center text-white p-3 rounded-pill my-4">
+      Diploma in Information Technology
+    </p>
+    <div class="row py-2 px-1 px-md-5 mx-1 mx-md-5 align-items-center">
+      <figure class="figure m-0 order-first order-lg-last col-lg-3 col-12">
+        <img
+          src="Graphics/DIT/gojo.JPG"
+          class="rounded-circle img-fluid"
+          alt="MyPhoto"
+        />
+        <figcaption class="text-center d-none">Data Analyst</figcaption>
+      </figure>
+      <div class="col-12 col-lg-9 order-last order-lg-first py-4 p-lg-0">
+        <p>
+          I'm a student persuring Diploma in Information Technology and here's
+          the timetable of my class DIT/FT/1A/08 and the modules that I have to
+          take for my semster 1 of year 1.
+        </p>
+      </div>
+    </div>
+    <div class="my-2">
+      <!--Table-->
+      <p class="h3 text-center text-white p-3 rounded-pill my-4">
+        DIT/FT/1A/08 TIMETABLE
+      </p>
+      <div class="table-responsive">
+        <table
+          class="table table-white table-striped table-hover table-bordered text-center"
+        >
+          <!--Table Title-->
+          <caption class="d-none">
+            DIT/FT/1A/08
+            <br />
+            TIMETABLE
+          </caption>
+          <colgroup>
+            <col class="firstcol" />
+            <col class="bodycol" />
+          </colgroup>
+          <!--Table Header-->
+          <thead>
+            <tr>
+              <th scope="col" class="align-middle border-0">&nbsp;</th>
+              <th scope="col" class="align-middle">08:00 - 09:00</th>
+              <th scope="col" class="align-middle">09:00 - 10:00</th>
+              <th scope="col" class="align-middle">10:00 - 11:00</th>
+              <th scope="col" class="align-middle">11:00 - 12:00</th>
+              <th scope="col" class="align-middle">12:00 - 13:00</th>
+              <th scope="col" class="align-middle">13:00 - 14:00</th>
+              <th scope="col" class="align-middle">14:00 - 15:00</th>
+              <th scope="col" class="align-middle">15:00 - 16:00</th>
+              <th scope="col" class="align-middle">16:00 - 17:00</th>
+              <th scope="col" class="align-middle">17:00 - 18:00</th>
+            </tr>
+          </thead>
+          <!--Table Content-->
+          <tbody>
+            <tr>
+              <th scope="row" class="align-middle">Mon</th>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td colspan="3" class="align-middle">FOP</td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Tue</th>
+              <td colspan="2" class="align-middle">FOC</td>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">CPR</td>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">ECG 1</td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Wed</th>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">MATH</td>
+
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">FED</td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Thu</th>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">MATH</td>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">FOC</td>
+              <td colspan="3" class="align-middle">FOP</td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Fri</th>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td colspan="2" class="align-middle">FED</td>
+              <td colspan="2" class="align-middle">CAT</td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Sat</th>
+              <td class="align-middle"></td>
+              <td class="align-middle">MATH Lecture</td>
+              <td class="align-middle">FIN ED 1</td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+            </tr>
+          </tbody>
+          <!--Table ending-->
+          <tfoot>
+            <tr>
+              <th colspan="11" scope="row" class="text-center align-middle">
+                Math lecture on Saturday is for self-study
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!--End of Table-->
+    </div>
+    <div class="my-5">
+      <p class="h2 text-center text-white p-3 rounded-pill my-4">
+        What I was learning in My Semester 1 of Year 1
+      </p>
+      <div class="row justify-content-around align-items-center">
+        <!--? Cards Grid System-->
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/53883"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 card p-0"
+        >
+          <img
+            src="Graphics/DIT/FofP.png"
+            alt="Fundamental of Programming"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Fundamental of Programming
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/8030"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 offset-lg-1 card p-0"
+        >
+          <img
+            src="Graphics/DIT/FendD.jpg"
+            alt="Front-End-Web Development"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Front-End-Web Development
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/8061"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 offset-lg-1 card p-0"
+        >
+          <img
+            src="Graphics/DIT/FofC.jpg"
+            alt="Fundamental of Computing"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Fundamental of Computing
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/7931"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 card p-0"
+        >
+          <img
+            src="Graphics/DIT/CAT.jpg"
+            alt="Critical and Analytical Thinking"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Critical and Analytical Thinking
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/71234"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 offset-lg-1 card p-0"
+        >
+          <img
+            src="Graphics/DIT/Math.png"
+            alt="Mathematics"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Mathematics
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+        <a
+          href="https://splms.polite.edu.sg/d2l/home/31703"
+          target="_blank"
+          class="col-10 col-md-5 col-lg-3 offset-lg-1 card p-0"
+        >
+          <img
+            src="Graphics/DIT/CPR.jpg"
+            alt="Communicating for Projects Effectiveness"
+            class="card-img-top m-0"
+          />
+          <div class="card-body">
+            <p class="text-center text-black card-title font-weight-bold h5">
+              Proposal Writing
+            </p>
+            <p class="text-center text-black card-text">Click Me</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="fixed-bottom m-3 m-lg-5">
+      <a href="#Top" class="bg-primary rounded-circle p-2 d-block" id="Return">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-capslock"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"
+          />
+        </svg>
+      </a>
+    </div>
+    <footer>
+      <p class="h5 pt-2 m-0 text-white text-center">Contact me</p>
+      <div class="contactme">
+        <div class="icons">
+          <!--Instagram-->
+          <a
+            href="https://www.instagram.com/noah_mh_/"
+            class="icon icon--instagram"
+            target="_blank"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+          <!--  Facebook -->
+          <a
+            href="https://www.facebook.com/lwinmoe.htet.585"
+            class="icon icon--facebook"
+            target="_blank"
+          >
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <!--  Email  -->
+          <a
+            href="mailto:LMOEHTET.22@ichat.sp.edu.sg"
+            class="icon icon--mail"
+            target="_blank"
+          >
+            <i class="ri-mail-line"></i>
+          </a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Noah-mh/CA1"
+            class="icon icon--github"
+            target="_blank"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+        </div>
+      </div>
+      <p class="h5 pt-2 m-0 text-white text-center">&copy;2022 Lwin Moe Htet</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JavaScript/clock.js"></script>
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>
