@@ -3,7 +3,7 @@
     Date: 08/08/2022
        */
 
-"use strict";
+
 let clock = () => {
   let date = new Date();
   let hrs = date.getHours();
@@ -12,7 +12,7 @@ let clock = () => {
   let period = "a.m.";
   if (hrs == 0) {
     hrs = 12;
-  } else if (hrs <= 12) {
+  } else if (hrs >= 12) {
     //some issues resolved
   }
   if (hrs > 12) {
